@@ -14,7 +14,6 @@ export NGINX_ROOT=public
 
 # Default Hugo version
 DEFAULT_HUGO_VERSION="0.145.0"
-apt install golang -y
 # attempt to extract the HUGO_VERSION parameter form the Heroku configuration vars, fall back to the default version if unavailable
 if [ -d "$ENV_DIR" -a -e "$ENV_DIR/HUGO_VERSION" ]; then
   export HUGO_VERSION=$(cat "$ENV_DIR/HUGO_VERSION")
